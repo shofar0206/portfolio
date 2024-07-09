@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 1000px;
+    width: 100%;
+    background-color: #ccd3ff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+}
+
+h2{
+    font-family: "comic sans ms";
+}
+nav{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li:hover{
+    background-color: rgb(243, 17, 168);
+    cursor: pointer;
+}
+
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: color .3s;
+}
+
+nav ul li:hover a{
+    color: white;
+}
+
+button#sign-up{
+    background-color: rgb(30, 30, 241);
+    color: white;
+    text-transform: uppercase;
+    width: 85px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color .3s;
+}
+
+button#sign-up:hover{
+    cursor: pointer;
+    background-color: rgb(243, 17, 168);
+}
+
+#img-and-desc{
+    display: flex;
+}
+
+.desc{
+    /* background-color: pink; */
+    width: calc(100% - 717px);
+    padding-top: 50px;
+    color: orangered;
+}
+
+section#services{
+    background-color: white;
+}
+
+section#services h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section#img-and-desc button{
+    background-color: rgb(243, 17, 168);
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+section#img-and-desc button:hover{
+    background-color: rgb(30, 30, 241);
+}
+
+section#services{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding-top: 30px;
+}
+
+section#services div.list-of-services{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    /* background-color: bisque; */
+}
+
+section#services div.list-of-services .service{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(221, 209, 209);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+
+section#services div.list-of-services .service:hover{
+    transform: translateY(-5px);
+}
+
+section#services div.list-of-services .service h3{
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    box-sizing: border-box;
+}
+
+section#services div.list-of-services .service h3#website{
+    padding-top: 12px;
+}
+
+section#services div.list-of-services .service h3#automation{
+    padding-top: 12px;
+}
+
+section#services h2 span{
+    color: orangered;
+}
+
+.service p{
+    padding-left: 10px;
+    line-height: 20px;
+}
+
+.service div.button{
+    background-color: rgb(30, 30, 241);
+    height: 30px;
+    width: 180px;
+    text-align: center;
+    color: white;
+    transition: background-color 0.3s;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.service div.button:hover{
+    cursor: pointer;
+    background-color: rgb(243, 17, 168);
+}
+
+
+
+
+@media only screen  and (max-width:720px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #ccd3ff;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: end;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    section#img-and-desc{
+        display: flex;
+    }
+    
+    section#img-and-desc img{
+        width: 100%;
+        height: auto;
+    }
+
+    section#img-and-desc .desc{
+        display: none;
+    }
+
+    section#services{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#services div.list-of-services{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        height: 1000px;
+        width: 98%;
+        justify-content: space-between;
+        /* background-color: bisque; */
+        align-content: flex-start;
+        row-gap: 30px;
+        box-sizing: border-box;
+    }
+
+    #services .service{
+        position: relative;
+    }
+
+    
+}
+
+
+
+
+
